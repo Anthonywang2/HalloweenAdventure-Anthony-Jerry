@@ -1,12 +1,12 @@
 // VARIABLES
 let Q1
 let Q2
-let kitchenChoice
+let Q2A1
+
 // MAIN
 function main() {
     startGame();
     secondChoice();
-    kitchenEat();
 }
 main();
 
@@ -21,16 +21,12 @@ function startGame() {
 function secondChoice() {
     if (Q2=="kitchen"){
         alert("You enter the kitchen and find a somewhat fresh bucket of KFC.")
-        let kitchenChoice = prompt("Do you eat the chicken? Answers are: 'yes' or 'no'")
-    } else {
-        alert("You enter the storage room and")
-    }
-}
-
-function kitchenEat() {
-    if (kitchenChoice==="yes"){
-        alert("This chicken was spiked by Evan Stewart who slapped some good stuff in it. You die, little fool. (Reload the page to restart)")
-    } else {
-        alert("Good job for not eating the chicken.")
+        Q2A1 = prompt("Do you eat this mouthwatering bucket of chicken? Choices are 'yes' or 'no'.")
+        if (Q2A1=="yes") {
+            alert("You die. Hahahaha evan stewart spiked the chicken with some drugs.")
+        }
+        if (Q2A1=="no") {
+            alert("Good job on not eating it. Evan stewart spiked it with drugs.")
+        }
     }
 }
