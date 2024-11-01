@@ -19,6 +19,7 @@ function main() {
     hellcatSecondRam();
     finishHim();
     bazinga();
+    storageRoom();
 }
 main();
 
@@ -115,3 +116,9 @@ function bazinga() {
     }
 }
 
+// STORAGE PATH FUNCTIONS
+function storageRoom() {
+    if (Q2 == "storage") {
+        alert("You go into the storage room, trip ove a bucket of KFC and die like a lil doorknob. Try going into the kitchen.")
+    }
+}
